@@ -1,0 +1,30 @@
+from turtle import *
+shape('turtle')
+circle(100)
+penup()
+forward(250)
+pendown()
+circle(100)
+penup()
+right(90)
+forward(50)
+right(90)
+pendown()
+for j in range(5):
+    for i in range(4):
+        forward(100)
+        left(90)
+    penup()
+    forward(150)
+    pendown()
+penup()
+goto(0,0)
+setheading(0)
+for h in range(2):
+    pendown()
+    for c in range(5):
+        forward(50)
+        left(72)
+    setheading(0)
+    penup()
+    forward(250)
