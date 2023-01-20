@@ -14,7 +14,7 @@ while True:
         else:
             print('_',end=' ')
     print()
-    print(result)
+    # print(result)
     if len(result)==len(randomWords):
         print('You Won!')
         break
