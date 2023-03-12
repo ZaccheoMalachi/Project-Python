@@ -6,7 +6,7 @@ import matplotlib.pyplot as mp
 # mp.ylabel('Sales')
 # mp.show()
 # x=[1,4,5,2,6]
-y=[4,2,6,1,8]
+y=np.array([4,2,6,1,8])
 label=['Apple','Mango','Banana','Kiwi','Watermelon']
 color=['red','orange','yellow','limegreen','green']
 # mp.scatter(x,y)
