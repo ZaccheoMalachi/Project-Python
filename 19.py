@@ -1,0 +1,22 @@
+import pandas as p
+data=p.read_csv('vacine.csv')
+print(data.head())
+print(data.shape)
+print(data.info())
+print(data.describe())
+print(data.isnull().sum())
+data.fillna(value=0,inplace=True)
+print(data.isnull().sum())
+print(data.head())
+print(data['date'].min())
+print(data['date'].max())
+print(data['vaccines'])
+vaccine=data.vaccines.str.split(',',expand=True)
+print(vaccine)
+data['v0']=vaccine[0]
+data['v1']=vaccine[1]
+data['v2']=vaccine[2]
+data['v3']=vaccine[3]
+data['v4']=vaccine[4]
+data['v5']=vaccine[5]
+print(data.info())
